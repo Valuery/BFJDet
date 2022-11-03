@@ -78,7 +78,7 @@ def load_masks(dict_input, key_name, key_box):
     return masks
 numid = 0
 def load_gt(dict_input, key_name, key_box, class_names, network='bfj'):
-    assert key_name in dict_input
+    # assert key_name in dict_input
     if len(dict_input[key_name]) < 1:
         return np.empty([0, 5])
     else:
